@@ -5,6 +5,9 @@
   "keywords": ["python", "flask", "playwright", "scraper"],
   "buildpacks": [
     {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    },
+    {
       "url": "heroku/python"
     },
     {
