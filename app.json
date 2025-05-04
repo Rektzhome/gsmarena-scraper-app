@@ -1,0 +1,20 @@
+{
+  "name": "gsmarena-scraper",
+  "description": "A Flask app to scrape GSMArena using Playwright",
+  "repository": "https://github.com/placeholder/repo",
+  "keywords": ["python", "flask", "playwright", "scraper"],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/mxschmitt/heroku-playwright-buildpack.git"
+    }
+  ],
+  "env": {
+    "PLAYWRIGHT_BROWSERS_PATH": {
+      "description": "Set Playwright browsers path for Heroku.",
+      "value": "0"
+    }
+  }
+}
